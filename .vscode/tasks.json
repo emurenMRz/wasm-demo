@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build - lifegame.wasm",
+			"group": "build",
+			"type": "shell",
+			"command": "clang",
+			"args": [
+				"--target=wasm32",
+				"-nostdlib",
+				"-Oz",
+				"'-Wl,--no-entry,--export-dynamic,--strip-all,--verbose,--allow-undefined-file=imports.symbols'",
+				"-o",
+				"public/lifegame.wasm",
+				"lifegame.c"
+			],
+			"problemMatcher": []
+		}
+	]
+}
