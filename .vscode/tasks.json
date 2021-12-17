@@ -12,7 +12,7 @@
 				"-Oz",
 				"'-Wl,--no-entry,--export-dynamic,--strip-all,--verbose,--allow-undefined-file=imports.symbols'",
 				"-o",
-				"public/lifegame.wasm",
+				"docs/lifegame.wasm",
 				"lifegame.c"
 			],
 			"problemMatcher": []
